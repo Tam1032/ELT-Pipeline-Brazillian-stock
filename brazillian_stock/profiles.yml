@@ -1,0 +1,14 @@
+brazillian_stock:
+  outputs:
+
+    dev:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: admin
+      pass: admin123
+      dbname: brazillian_stock
+      schema: analytics
+      
+  target: dev

@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+    final_psql:
+        image: postgres:15
+        container_name: final_psql
+        volumes:
+            - ./postgresql:/var/lib/postgresql/data
+        ports:
+            - "5432:5432"
+        env_file:
+            - env
+        networks:
+            - final_network
+networks:
+    final_network:
+        driver: bridge
+        name: final_network
