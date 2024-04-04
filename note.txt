@@ -1,1 +1,0 @@
-nên dóng gói project - không nên dùng dagster dev -f 
